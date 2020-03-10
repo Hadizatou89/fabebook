@@ -4,216 +4,150 @@ body{
     background-color: rgb(237, 240, 245);
     width: 100%;
 }
-header{
-    background-color:rgb(58, 90, 152) ;
-    display:flex;
-    height: 190px;
+.page{
+    display: flex;
+    flex-direction: column;
+}
+.top{background-color:#405e9a ;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content:space-around ;
+    color: white;
 }
 .iden{
+    width: 30%;
+    padding-top:25px ;
     display: flex;
-    position: relative;
-    left: 570px;
-    top: 50px;
-    color: white;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
 }
 .fac{
-    color: white;
     font-size: 40px;
     font-weight: bold;
-    position: relative;
-    top: 2px;
-    left: 200px ;
+    padding-top: 25px;
+    text-align: center;
+    width: 20%;
 }
 .sub{
-    position: relative;
-    top: 25px;
+    padding-top: 15px;
 }
-#login{
+#log{
     background-color: rgb(37, 102, 232);
     border: 1px solid rgb(37, 102, 232);
+    border-radius: 4px;
     color: white;
     font-size: 17px;
     font-weight: bold;
+    width: 75px;
+    height: 25px;
+}
+#mail,#passwor{
+    height: 20px;
+    width: 318px;
+    border-radius: 2px;
+    background-color: white;
+}
+.mail,.pass{
+    padding-right:5px ;
+}
+#fort{
+    opacity: 45%;
 }
 .section{
     display: flex;
-    margin-left: 220px;
-    padding-top: 70px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 150px;
 }
 .droite img{
     width: 15px;
     height: 15px;
 }
-h1{
-   font-size: 5Opx;
+.image{
+    width: 50px;
+    height: 50px;
 }
-.gauche img{
-    width: 100px;
-    height: 100px;
-}
-.droite{
-   position: relative;
-   left: 150px;
-}
-.l1,.l2,.l3{
-    display: flex;
-}
-/*.gauche {
-    line-height: 30px;
-    position: relative;
-    left: 350px;
-    margin-top: 50px
-}*/
 .gras{
     font-weight: bold;
 }
 .tex{
-    font-size:30px;
+    padding-left: 5px;
+    font-weight: bolder;
+}
+h2{
     font-weight: bold;
-    margin-bottom: 20px;
+    font-size: 30px;
+}
+.droite{
+   width: 400px;
+}
+.l{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+}
+.gauche {
+    width: 500px;
+}
+input{
+    margin: 5px;
 }
 .al{
-    line-height: 100px;
+    font-size: 18px;
 }
-.input{
-    font-size: 50px;
-}
-select{
-    height: 30px;
-    width: 100px;
-}
-/*#female,#male,#custom{
-    margin-top: 30px;
-}*/
-#last,#first,#password,#mail,#email{
-    font-size:20px;
-}
-#last{
-    margin-left: 16px;
-}
-.text{
-    margin-left: 30px;
+#nam{
+    width: 150px;
+    height: 25px;
+    border-radius: 5px;
+    background-color: white;
 }
 #up{
-    margin-left: 90px;
-    font-size: 14px;
+    background-color:#5d9549;
+    width: 150px;
+    height: 30px;
+    border-radius: 7px;
     font-weight: bold;
-    font-size:20px;
-    border-radius: 5px;
-    width: 160px;
-    background-color: rgb(95, 156, 76);
     color: white;
+    font-size: 15px;
 }
 a{
     text-decoration: none;
-}
-@media screen and (max-width: 1024px){
-    header{
-        width: auto;
+} 
+@media all and (min-width: 1024px) and (max-width: 1280px){
+    .top {
+        background-color: #405e9a;
+        display: flex;
         flex-direction: column;
-    }
-    body{
-        width: 100%;
-    }
-    .droite{
-       position: relative;
-       left: -190px;
-       font-size: 15px;
-    }
-    /*.gauche {
-        line-height: 30px;
-        left:-190px;
-        margin-top: 50px;
-        font-size: 20px;
-        position: relative;
-    }
-    .gauche img{
-        width: 40px;
-        height: 40px;
-        
-    }
-    .tex{
-        font-size:15px;
-        font-weight: bold;
-        margin-bottom: 20px;
-    }*/
-    .gauche {
-        display: none;
-    }
-    
-    input{
-        width: 100px;
-        font-size: 10px;
-    }
-    .input{
-        font-size: 20px;
-    }
-    h1{
-        margin-top: 50px;
-        font-size: 30px;
-    }
-    #last,#first,#password,#email,#mail{
-        font-size:10px;
-        border-radius: 5px;
-        margin-top: 30px;
-        line-height: 20px;
-        width: 150px;
-    }
-    #last{
-        margin-left: 3px;
-    }
-    #login{
-        font-size:13px;
-        border-radius: 5px;
-        margin-top: 19px;
-    }
-    .up{
-        margin-left: 50px;
-        font-weight: bold;
-        font-size:10px;
-        border-radius: 5px;
-        width: 90px;
-        background-color: rgb(95, 156, 76);
+        flex-wrap: wrap;
+        justify-content: center;
+        color: white;
+     }
+}
+@media all and (max-width: 880px){
+    .top {
+        background-color: #405e9a;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
         color: white;
     }
-    p{
-        font-size: 10px;
-    }
-    select{
-        height: 23px;
-    }
+}
+@media all and (min-width: 320px) and (max-width: 490px){
     .iden{
-        position: relative;
-        left:10px;
-        font-size: 10px;
-        margin-top: -50px;
-    }
-    .fac{
-        font-size: 30px;
-        position: relative;
-        left: 10px;
-        top:auto ;
-    }
-    .login{
-        position: relative;
-        top: 16px;
-        font-size: 2px;
-    }
-    #em,#en{
-        position: relative;
-        top: 20px;
-    }
-    #year{
-        padding-top: 10px;
-    }
-    span{
-        font-size: 10px;
-    }
-    .text{
-        left: 10px;
-    }
-    .droite img{
-        width: 10px;
-        height: 10px;
-    }
+        width: 30%;
+        padding-top:25px ;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap; 
+    } 
+    #log{
+        font-size: 10px;  
+    } 
+    h2{
+        font-size: 15px;
+    }     
 }

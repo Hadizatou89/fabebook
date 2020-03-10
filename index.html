@@ -8,31 +8,30 @@
     <title>page facebook</title>
 </head>
 <body>
-    <header>
-        <div class="fac">
-            <h1>facebook</h1>
-        </div>
-        <div class="iden">
-                <div>
-                    <label for="email" id="em">  mail or Phone</label><br/>
-                    <input type="email" name="email" id="email">
-                </div>&nbsp;&nbsp;
-                <div>
-                    <label for="" id="en">Password</label><br/>
-                    <input type="password" name="password" id="password"><br/>
-                    <span id="forgot">Forgot account?</span>
-                </div>&nbsp;&nbsp;
-                <div class="sub">
-                    <input type="submit" id="login" value="Log in"/>
-                </div>
-        </div>
-    </header>
-    <div class="section">
-        <div class="gauche">
-            <div class="tex">
-                <span>Connect with friends and the <br> world around you on Facebook.</span>
+    <div class="page">
+        <div class="top">
+            <div class="fac">
+               <span>facebook</span>
             </div>
-            <div class="l1">
+            <div class="iden">
+                <div class="mail">
+                    <label for="email" >  Email or Phone</label><br/>
+                    <input type="email" name="email"id="email">
+                </div>
+                <div class="pass">
+                    <label for="password">Password</label><br/>
+                    <input type="password" name="password" id="password"><br/>
+                    <span id="fort">Forgot account?</span>
+                </div>
+            <div class="sub">
+                <button type="submit" id="log">Log in</button>
+            </div>
+            </div>
+        </div>
+        <div class="section">
+        <div class="gauche">
+            <div class="tex"><span>Connect with friends and the <br> world around you on Facebook.</span></div>
+            <div class="l">
                 <div class="g">
                     <img src="image1.png" alt="image1" class="image">
                 </div>
@@ -40,7 +39,7 @@
                     <p><span class="gras">See photos and updates</span> from friends in News Feed.</p>
                 </div>
             </div>
-            <div class="l2">
+            <div class="l">
                 <div class="image">
                     <img src="image2.png" alt="image2" class="image">
                 </div>
@@ -48,7 +47,7 @@
                     <p><span class="gras">Share what's new</span> in your life on your Timeline.</p>
                 </div>
             </div>
-            <div class="l3">
+            <div class="l">
                 <div class="image">
                     <img src="image3.png" alt="image3" class="image">
                 </div>
@@ -63,19 +62,19 @@
             <form method="post" action="traitement.php">
             <p>
                 <label for="first name"></label>
-                <input type="text" name="first name" id="first" size="20"placeholder="First name"> &nbsp;
+                <input type="text" name="nam" id="nam" placeholder="First name">
                 <label for="last name"></label>
-                <input type="text" name="last name" id="last" size="20" placeholder="Last name">
+                <input type="text" name="nam" id="nam" placeholder="Last name">
             </p>
             <p>
                 <label for="mail"></label>
-                <input type="text" name="mail" id="mail" size="45.1" placeholder="Mobile number or email"><br/><br/>
+                <input type="text" name="mail" id="mail" placeholder="Mobile number or email"><br/><br/>
                 <label for="password"></label>
-                <input type="password" name="password" id="password"size="45.1" placeholder="New passord">
+                <input type="password" name="passwor" id="passwor" placeholder="New password">
             </p>
             </form>
             <form method="post" action="traitement.php">
-                <label for="pays">Birthday</label><br/>
+                <span class="bir">Birthday</span><br>
                 <select name="mois" id="mois">
                     <option value="january">January</option>
                     <option value="february">February</option>
@@ -167,9 +166,11 @@
                and <a href="https://www.facebook.com/policies/cookies/">Cookies Policy</a> You may receive SMS Notifications from <br/>
                us and can opt out any time.
             </p>
+            
             <input type="submit" id="up" value="Sign Up"/>
             <hr>
             <p><a href="https://www.facebook.com/pages/creation/?ref_type=registration_form">Create a Page</a> for a celebriity or business</p>
+        </div>
         </div>
     </div>
 </body>
